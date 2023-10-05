@@ -21,6 +21,9 @@ func NewDB() *sql.DB {
 //migrate create -ext sql -dir db/migrations create_table_first
 //migrate create -ext sql -dir db/migrations create_table_second
 //migrate create -ext sql -dir db/migrations create_table_third
+//migrate create -ext sql -dir db/migrations create_table_sample_dirty_state
 //migrate -database "mysql://root@tcp(localhost:3306)/golang-database-migration" -path db/migrations up
 //migrate -database "mysql://root@tcp(localhost:3306)/golang-database-migration" -path db/migrations down
 //migrate -database "mysql://root@tcp(localhost:3306)/golang-database-migration" -path db/migrations up/down (tambah versi)
+//migrate -database "mysql://root@tcp(localhost:3306)/golang-database-migration" -path db/migrations force (versi sebelumnya) 20231005001137
+//migrate -database "mysql://root@tcp(localhost:3306)/golang-database-migration" -path db/migrations version
