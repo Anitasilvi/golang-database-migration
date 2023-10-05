@@ -19,3 +19,4 @@ func NewDB() *sql.DB {
 }
 
 //migrate -database "mysql://root@tcp(localhost:3306)/golang-database-migration" -path db/migrations up
+//migrate -database "mysql://root@tcp(localhost:3306)/golang-database-migration" -path db/migrations down
